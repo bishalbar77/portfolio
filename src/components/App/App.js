@@ -16,8 +16,8 @@ const App = () => {
                 <div>
                     <NavBar/>
                     <Route path="/" exact component={Home} />
-                    <Route path="/about" exact component={Projects} />
-                    <Route path="/projects" exact component={About} />
+                    <Route path="/about" exact component={About} />
+                    <Route path="/projects" exact component={Projects} />
                     <Route path="/skills" exact component={Skills} />
                     <Route path="/contact" exact component={Contact} />
                     <GoHome />
