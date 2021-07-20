@@ -8,7 +8,11 @@ import LinkedInIcon from '../../assets/li.png';
 
 const Contact = () => {
     return (
-        <div className="section-container">
+        <div 
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" 
+            className="section-container">
             <PageHeader heading="Get in touch" details="Hi" />
             <div className="contact-form-container">
                 <form action="" className="contact-form">
