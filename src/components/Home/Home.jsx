@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "./Home.css";
 import HomeAnime from "../../assets/home_anime.gif";
+import Typewriter from 'typewriter-effect';
 
 class Home extends Component {
 
@@ -13,8 +14,16 @@ class Home extends Component {
                 data-aos-easing="ease-in-sine" 
                 className="home-container">
                 <div className="header-text">
-                    <h1>Welcome to my portfolio!</h1>
-                    <p>This is Bishal Rana, an App and Web dev</p>
+                    <h1>Hello! I'm Bishal Rana</h1>
+                    <p>
+                        <Typewriter
+                        options={{
+                            strings: [' an App developer', ' a Web Developer'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                        />
+                    </p>
                 </div>
                 <div className="header-buttons">
                     <Link to="/about" className="btn btn-white">
