@@ -7,7 +7,11 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home-container">
+            <div 
+                data-aos="fade-down"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" 
+                className="home-container">
                 <div className="header-text">
                     <h1>Welcome to my portfolio!</h1>
                     <p>This is Bishal Rana, an App and Web dev</p>

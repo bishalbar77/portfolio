@@ -2,11 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./PageFooter.css";
 
-const PageFooter = ({ footer, link, toLink }) => {
+const PageFooter = ({ toLink }) => {
     return ( 
         <div className="footer">
-            {footer}
-            <Link to={toLink} className="footer-link-element">{link}</Link>
+            <div class="arrow">
+                <Link to={toLink}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </Link>
+            </div>
         </div>
     );
 }

@@ -15,7 +15,11 @@ const About = () => {
             </div>
 
             <div className="about-main">
-                <div className="about-section-left">
+                <div 
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    className="about-section-left">
                     <h3 className="about-sub-heading">Hello</h3>
                     <p className="about-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere corrupti voluptate laboriosam nihil quia tempore architecto facilis, unde ducimus dicta eum rem vero deserunt illum tenetur molestias voluptas expedita&nbsp;<a href="https://github.com/bishalbar77" className="about-link-element">Github</a></p>
                     <h3 className="about-sub-heading">Hello</h3>
@@ -23,12 +27,16 @@ const About = () => {
                     <h3 className="about-sub-heading">Hello</h3>
                     <p className="about-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facere corrupti voluptate laboriosam nihil quia tempore architecto facilis, unde ducimus dicta eum rem vero deserunt illum tenetur molestias voluptas expedita&nbsp;<a href="https://github.com/bishalbar77" className="about-link-element">Github</a></p>
                 </div>
-                <div className="about-section-right">
+                <div 
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    className="about-section-right">
                     <img src={AboutAnime} alt="AboutAnime" className="about-anime"/>
                 </div>
             </div>
 
-            <PageFooter footer="Check out my " link="projects" toLink="/projects" />
+            <PageFooter toLink="/projects" />
         </div>
     )
 }
